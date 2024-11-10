@@ -6,6 +6,13 @@
     font-weight: 700;
     font-style: normal;
   }
+  
+  .mea-culpa-regular {
+    font-family: "Mea Culpa", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 
   /* -------- Shared style -------- */
   .display-flex{
@@ -16,6 +23,17 @@
    }
    .bg-color{
     background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+   }
+
+   .btn-primary{
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    gap: 10;
+    border: none;
+    color: white;
+    padding: 16px 40px;
+    font-weight: 600;
+    font-size: 1.8rem;
    }
 
   /* --------------------------Header related style------------------------------- */
@@ -33,6 +51,13 @@
     color: rgb(230, 83, 60);
     margin: 0px 10px;
 }
+.nav-links{
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    padding: 4px;
+
+}
 .nav-link{
     text-decoration: none;
     font-weight: 400;
@@ -49,23 +74,28 @@
     border-radius: 46px;
     background: rgb(230, 83, 60);
     padding: 8px 20px;
+    margin: 0px 47px;
 }
 .navbar , .banner{
     max-width: 1440px;
     margin: 0 auto;
 }
-.banner-img{
-    width: 100%;
-}
+
 
 /* Banner related style */
 .banner{
     justify-content: space-between;
-}
+
+    }
+    
 .banner-content{
-    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     text-align: center;
-    margin-bottom: 50px;
+    margin: 28px 0px;
+    gap: 28;
 }
 .banner-title{
     font-weight: 900;
@@ -73,11 +103,135 @@
     padding: 0;
     color: rgb(255, 255, 255);
 }
+.banner-img{
+    width: auto;
+    margin-right: 200px;
+}
+.banner-description{
+ 
+color: rgba(255, 255, 255, 0.5);
+font-size: 1rem;
+font-weight: 400;
+text-align: center;
+}
+
+.btn-download{
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 42px;
+    padding: 16px 40px 16px 40px;
+    margin: 0px 14px;
+    gap: 10px;
+    justify-content: center;
+    background: black;
+    color: white;
+    font-weight: 600;
+    font-size: 1.8rem;
+
+}
+.btn-tutorial{
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+   width: 206px;
+   height: 96px;
+   right: -787px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    color: white;
+    margin-left: -400px;
+}
+
+.box{
+    background: rgb(230, 83, 60);
+    height: 40px;
+    width: 40px;
+    right: 787px;
+    border-radius: 50%;
+}
+
   /* ---------------------------Main section related style------------------------- */
 
+.change-habbits{
+    text-align: center;
+    gap: 58;
+    padding: 0px;
+}
+.habbit-carts{
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40;
+    padding: 0px;
+    margin: 58px 0px;
+}
+.habbit-title{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 14px 0px;
+    gap: 14;
+    padding: 0px;
+}
+.habbit-description{
+    justify-content: flex-start;
+    align-items: center;
+    gap: 14;
+    padding: 0px;
+    margin: 14px 0px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+.cart-image{
+    width: 272px;
+    border-radius: 50%;
+}
+.cart-title{
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6;
+    margin: 6px 0px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+.cart-description{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    font-weight: 400;
+    align-items: center;
 
+}
+.run-cart{
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+}
+.run-image{
+    height: 312px;
+    width: 366px;
+}
 
   /* -------------------------Footer related style------------------------------- */
 
 
   /* --------------------------Responsive related style-------------------------- */
+
+  @media screen and (max-width:576px){
+
+    .nav-links > .nav-item{
+        visibility: hidden;
+
+        
+    }
+     .banner{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .habbit-carts{
+        flex-direction: column;
+    }
+    
+    
+  }

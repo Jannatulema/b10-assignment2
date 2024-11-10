@@ -237,7 +237,81 @@ text-align: center;
 }
 
   /* -------------------------Footer related style------------------------------- */
+footer{
+    background: rgba(255, 255, 255, 0.1);
+    margin: 88px 0px;
+}
+.foot{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 102;
+    padding: 0px;
+}
 
+
+.fitness-title{
+    color: rgb(230, 83, 60);
+    font-size: 4.375rem;
+    font-weight: 800;
+    text-align: left;
+    gap: 20;
+    margin: 0px 102px;
+    padding: 0px;
+}
+.fitness-description{
+    gap: 20;
+    padding: 0px;
+    margin: 0px 102px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-align: left;
+}
+.get-started{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: left;
+    gap: 80px;
+}
+.started-title{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: left;
+    margin: 25px 0px;
+    padding: 0px;
+}
+.started-item{
+    list-style: none;
+    text-align: left;
+    gap: 20;
+    padding: 0px;
+    margin: 10px 10px;
+
+    
+}
+.started-list{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.44rem;
+    font-weight: 400;
+    text-align: left;
+    
+}
+hr{
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    width: 1059.5px;
+    height: 0;
+    left: 189px;
+    top: 394px;
+}
+.foot-description{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+}
 
   /* --------------------------Responsive related style-------------------------- */
 
@@ -269,6 +343,13 @@ text-align: center;
     .run-description{
         text-align: center;
     }
-    
+    .foot{
+        flex-direction: column;
+        align-items: center;
+    }
+    .get-started{
+        flex-direction: column;
+        align-items: center;
+    }
     
   }

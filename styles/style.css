@@ -204,10 +204,34 @@ text-align: center;
 
 }
 .run-cart{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     border-radius: 18px;
     background: rgb(34, 34, 34);
+    margin: 50px 0px;
+
+}
+.run-title{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+    align-items: flex-start;
+    text-align: left;
+    gap: 14;
+    margin: 10px 0px;
+}
+.run-description{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    font-weight: 400;
+    align-items: flex-start;
+    text-align: left;
+    gap: 14;
+    margin: 10px 0px;
 }
 .run-image{
+    margin: 30px 20px;
     height: 312px;
     width: 366px;
 }
@@ -231,6 +255,19 @@ text-align: center;
     }
     .habbit-carts{
         flex-direction: column;
+    }
+    .run-cart{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: center;
+
+    }
+    .run-title{
+        text-align: center;
+    }
+    .run-description{
+        text-align: center;
     }
     
     
